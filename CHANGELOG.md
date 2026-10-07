@@ -1,5 +1,10 @@
 # 更新日志
 
+## v9.3 (2026-10-07)
+- 修锁屏连播：playing 事件里重建 media session（iOS 会清空播放开始前注册的 handlers，致按钮变灰）；iOS 显式置空 seekbackward/seekforward/seekto，还原上一首/下一首按钮；playbackState 同步真实状态
+- 锁屏 play() 被系统拒绝后自动恢复：解锁/点按一次自动重试播放；preSwitch 失败也进重试
+- 加 navigator.audioSession.type='playback'；启动时清 WebKit 陈旧 media session 状态
+
 ## v9.2 (2026-10-07)
 - preSwitch 回滚到 v8.5 版本（v9.1 的回滚逻辑反而导致卡死）
 - updateMediaSession 简化到最简（只设4个处理器）
