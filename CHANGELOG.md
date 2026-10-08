@@ -1,5 +1,11 @@
 # 更新日志
 
+## v9.4 (2026-10-08)
+- 修锁屏切歌卡住：SW 转发音频请求时声明 mode:'cors'，让流式播放真正工作（之前认证头疑似被 no-cors 吞掉，一直在走整首下载）
+- play() 加 8 秒超时（卡住也算失败，走兜底）；整首下载加 25 秒熔断
+- 边界看门狗：每次切歌都布防，解锁可见/点按时只要没播起来就重试；播起来自动解除
+- playFallback 成功后补上 prefetchNext（之前这条路不断预取，链条会断）
+
 ## v9.3 (2026-10-07)
 - 修锁屏连播：playing 事件里重建 media session（iOS 会清空播放开始前注册的 handlers，致按钮变灰）；iOS 显式置空 seekbackward/seekforward/seekto，还原上一首/下一首按钮；playbackState 同步真实状态
 - 锁屏 play() 被系统拒绝后自动恢复：解锁/点按一次自动重试播放；preSwitch 失败也进重试
