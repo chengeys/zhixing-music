@@ -1,5 +1,8 @@
 # 更新日志
 
+## v9.6 (2026-10-25)
+- 新增「当前播放列表」面板：全屏播放页点右下角 ☰，能看到当前歌曲集/跑步歌单的全部歌曲，绿色高亮正在播的那首并自动滚到它，点任意一首直接跳过去播；之前 ☰ 只弹一句"共 X 首"，看不到歌单
+
 ## v9.5 (2026-10-25)
 - 跑步180精准歌单从 5 首扩到 14 首：BPM 表扩充（孤勇者 89、Peaches 90、Starboy 93、Centuries 88、Hall of Fame 85、Sing Me to Sleep 85、We Are Never 86、Heathens 90、Closer 95 等），匹配窗口放宽到 85-95 / 168-188
 - 剔除假阳性：Be The One 串歌、Demons/Chandelier 的慢翻唱、Hymn for the Weekend 的变速 Remix 都已移出表；同名同歌手去重
