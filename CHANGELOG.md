@@ -1,5 +1,10 @@
 # 更新日志
 
+## v9.5 (2026-10-25)
+- 跑步180精准歌单从 5 首扩到 14 首：BPM 表扩充（孤勇者 89、Peaches 90、Starboy 93、Centuries 88、Hall of Fame 85、Sing Me to Sleep 85、We Are Never 86、Heathens 90、Closer 95 等），匹配窗口放宽到 85-95 / 168-188
+- 剔除假阳性：Be The One 串歌、Demons/Chandelier 的慢翻唱、Hymn for the Weekend 的变速 Remix 都已移出表；同名同歌手去重
+- 表中预置了库里暂无的经典（Roar、Blinding Lights、As It Was 等），以后往 NAS 加歌会自动匹配
+
 ## v9.4 (2026-10-25)
 - 新增「跑步模式 · 180 步频」：首页绿色大按钮，一键生成 40 首歌单自动连播，不用选歌
 - 精准层：已知 BPM 曲目表（RUN_BPM）匹配 90±3 / 180±6 的歌（Faded 90、Cheap Thrills 90、Despacito 89 等），同曲最多留 2 个原版
